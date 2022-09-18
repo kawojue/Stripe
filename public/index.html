@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Scripts -->
+    <script type="module" src="script.js" defer></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8b9b074ef2.js" crossorigin="anonymous"></script>
+
+    <!-- Font Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-poppins bg-[url('../images/hero.svg')] bg-no-repeat bg-center bg-cover">
+    <nav class="navbar mx-auto lg:px-20 md:px-10 px-5 py-3">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <img src="../images/logo.svg" alt="logo">
+            <button class="open-btn btn trans md:hidden" title="open">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- Links -->
+            <ul class="nav-links text-white text-lg tracking-wide md:flex gap-16 hidden">
+                <li>
+                    <button type="button" data-id="1" class="link-btn">products</button>
+                </li>
+                <li>
+                    <button type="button" data-id="2" class="link-btn">developers</button>
+                </li>
+                <li>
+                    <button type="button" data-id="3" class="link-btn">company</button>
+                </li>
+            </ul>
+            <!-- Sign in button -->
+            <a href="#" class="btn hidden trans md:block">Sign in</a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main id="content" class="w-screen h-[80vh] lg:px-24 md:px-12 pl-8">
+        <section
+            class="section-center w-full h-full grid grid-cols-3 place-items-center text-start items-center gap-[1rem]">
+            <article class="section flex flex-col gap-7 col-span-3 md:col-span-2">
+                <h1 class="font-semibold text-txt-clr-0 md:text-[88px] md:leading-none text-[46px] leading-[55px]">
+                    Payments
+                    infrastructure
+                    <br> for the internet
+                </h1>
+                <p class="text-bg-clr-0 font-light md:text-[20px] leading-[25.2px] md:leading-[36px] text-[14px]">
+                    Millions of companies of all sizes—from startups to Fortune 500s—use
+                    Stripe’s software and APIs to accept payments, send payouts, and
+                    manage their businesses online.
+                </p>
+                <button type="button" title="start now" class="btn trans w-fit">Start now</button>
+            </article>
+            <article class="lg:w-3/5 w-[12rem] hidden md:block">
+                <img src="../images/phone.svg" alt="phone" class="w-full">
+            </article>
+        </section>
+    </main>
+
+    <!-- Sidebar -->
+    <section id="modal" class="fixed top-0 w-full h-full grid place-items-center z-[2] hide md:hidden">
+        <article id="modal-center"
+            class="relative w-[90vw] h-[85vh] max-w-[600px] rounded-[1rem] bg-white pr-5 pl-7 py-16 capitalize trans">
+            <button type="button" title="close"
+                class="close-btn bg-transparent absolute top-[1rem] right-[1.5rem] text-bg-clr-0">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-content"></div>
+        </article>
+    </section>
+
+    <!-- Submenu -->
+    <aside class="submenu absolute z-[3] hidden">
+        <article class="submenu-center md:flex hidden bg-white rounded-[1rem] px-5 pb-5 pt-7 text-bg-clr-0 capitalize">
+        </article>
+    </aside>
+</body>
+
+</html>

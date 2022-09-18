@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply rounded-full px-4 py-1 text-white bg-black;
+}
+
+.btn:hover {
+    @apply bg-bg-clr-0;
+}
+
+.trans {
+    @apply transition-all ease-linear duration-[320ms];
+}
+
+.link-btn {
+    @apply px-5 py-2 text-[17.2px] capitalize;
+}
+
+#modal-center {
+    /* @apply text-txt-clr-0; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#modal-center h1,
+.submenu-center h1 {
+    @apply mb-5 font-bold tracking-widest;
+}
+
+.modal-content {
+    @apply flex flex-col gap-10 text-sm;
+}
+
+.submenu-content {
+    @apply flex gap-12;
+}
+
+.sub-modal {
+    @apply grid grid-cols-2 gap-2;
+}
+
+.sub-modal a,
+.submenu-content a {
+    @apply flex items-center gap-3;
+}
+
+.hide {
+    @apply hidden;
+}
+
+.opa {
+    background: rgba(0, 0, 0, 0.5);
+}
